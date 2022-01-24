@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.box {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: orange;
+  min-width: 250px;
+}
+
+.indigo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: indigo;
+}
+
+.counter {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-weight: bold;
+  color: white;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    text-orientation: unset;
+  }
+  .box {
+    min-width: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

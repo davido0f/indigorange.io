@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    position: relative;
+    flex: 1;
+    background-color: orange;
+    min-width: 250px;
+}
+
+.indigo {
+    flex: 1;
+    background: indigo;
+}
+.counter {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-weight: bold;
+    color: white;
+    writing-mode: vertical-lr;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .counter {
+        writing-mode: unset;
+        text-orientation: unset;
+    }
+    .box{
+        min-width: 0;
+    }
+}
+
